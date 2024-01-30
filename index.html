@@ -1,130 +1,120 @@
 <!DOCTYPE html>
 <html>
-    <head>
-<link rel="website icon" href="icon.jpg" type="jpg" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Kolkata International Book Fair</title>
-        <style type="text/css" media="all">
-        * {
-            margin: 0;
-            color: white;
-            padding: 0;
-        }
-        :root {
-            --unic: #77f;
-        }
-        body {
-            background: #dedefe;
-            color: #000;
-        }
-            header {
-                position: sticky;
-                width: 100vw;
-                height: 50px;
-                top: 0;
-                z-index: 3;
-                display: grid;
-                background: var(--unic);
-                align-content: center;
-            }
-            .nav {
-                padding: 0px 10px;
-            }
-            .box {
-                width: clamp(300px, 30vw, 400px);
-                aspect-ratio: 1 / .6;
-                background: #fffdff;
-                border-radius: 10px;
-                margin-left: 10px;
-                margin-right: 10px;
-                margin-top: 10px;
-                box-shadow: 1px 2px 10px #0001;
-                background: #fff;
-            }
-            .main {
-                width: 100vw;
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: row;
-                justify-content: space-evenly;
-            }
-            .title{
-                color: var(--unic);
-                font-size: 24px;
-                padding: 20px 7px;
-            }
-            .body {
-                width: 100vw;
-                height: 250px;
-                background-image:linear-gradient(#000, #fff1), url('1.jpg');
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center center;
-            }
-            .des {
-                font-family: Monospace;
-                padding: 7px;
-            }
-            .op {
-                background-image:linear-gradient(#000, #fff1);
-                height: 100%;
-            }
-            @keyframes fade {
-                0%,100% {
-                    opacity: 0;
-                } 100% {
-                    opacity: 1;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <header>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link rel="website icon" href="res/icon.jpg" type="jpg" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kolkata International Book Fair</title>
+    <link rel="stylesheet" href="res/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="brand-icon">
+            <img src="res/icon.jpg" alt="brand icon">
+        </div>
+        <div class="title">
             <h2 class="nav">Kolkata International Book Fair</h2>
-        </header>
-        <div id="body" class="body">
-            <div class="op">
-            <h1 class="title">Kolkata Book Fair 2024</h1>
-            <p class="des">Everything To Know About The Biggest Book Fair In The World</p>
+        </div>
+        <div class="menu">
+            <i class="fas fa-light fa-bars bars"></i>
+        </div>
+    </header>
+    <div class="intro">
+        <!-- space for adding animation -->
+        <div class="waves"></div>
+
+
+        <!-- space for adding animation -->
+        <p class="greetings">Kolkata International Book Fair</p>
+        <p class="date"> Thu, 18 Jan, 2024 – Wed, 31 Jan, 2024</p>
+        <p class="greet" id="greet">L</p>
+    </div>
+    <div class="main">
+        <div class="home box">
+            <div></div>
+            <div>
+                <div class="anim">
+                    <p class="caption">
+                        1000+ book stalls are present 
+                    </p>
+                    <p class="more">
+                        <a href="#">tap here to explore more</a>
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="main">
         <div class="home box">
-            Wellcome to Kolkata International Book Fair
+            <div></div>
+            <div>
+                <div class="anim">
+                    <p class="caption">
+                        1 billion+ books are avalable
+                    </p>
+                     <p class="more">
+                        <a href="#">tap here to explore more</a>
+                    </p>
+                </div>
+            </div>
         </div>
         <div class="home box">
-            
+            <div></div>
+            <div>
+                <div class="anim">~
+                    <p class="caption">
+                        10+ country's book stalls are there
+                    </p>
+                     <p class="more">
+                        <a href="#">tap here to explore more</a>
+                    </p>
+                </div>
+            </div>
         </div>
-                <div class="home box">
-            
+        <div class="home box">
+            <div></div>
+            <div>
+                <div class="anim">
+                    <p class="caption">
+                        15+ colleges are there
+                    </p>
+                     <p class="more">
+                        <a href="#">tap here to explore more</a>
+                    </p>
+                </div>
+            </div>
         </div>
-                <div class="home box">
-            
+        <div class="home box">
+            <div class="test"></div>
+            <div>
+                <div class="anim">
+                    <p class="caption">
+                        1 M+ people are visiting the fair
+                    </p>
+                     <p class="more">
+                        <a href="#">tap here to explore more</a>
+                    </p>
+                </div>
+            </div>
         </div>
-                <div class="home box">
-            
+        <div class="home box">
+            <div></div>
+            <div>
+                <div class="anim">
+                    <p class="caption">
+                        Thu, 18 Jan, 2024 – Wed, 31 Jan, 2024
+                    </p>
+                     <p class="more">
+                        <a href="#">tap here to explore more</a>
+                    </p>
+                </div>
         </div>
-                <div class="home box">
-            
         </div>
-        </div>
-        <script type="text/javascript" charset="utf-8">
-            const body = document.getElementById("body");
-            let list = ["1.jpg","2.jpg","3.jpg","4.jpg"],i = 1;
-            setInterval(() => {
-                    
-                body.style.backgroundImage = `url(${list[i]})`;
-                body.style.animation = "fade .8s";
-                setTimeout(() => {
-                    body.style.animation = "";
-                },800);
-                i++;
-                if (i == 4) {
-                    i = 0;
-                }
-                
-            },2000);
-        </script>
-    </body>
+    </div>
+    <script src="res/script.js"></script>
+</body>
+
 </html>
