@@ -3,6 +3,9 @@
     color: white;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 ::-webkit-scrollbar {
     width: 0px;
@@ -67,7 +70,7 @@ header {
     aspect-ratio: 1 / 1;
 }
 .box {
-    width: clamp(300px,74vw,420px);
+    /*width: clamp(300px,74vw,420px);*/
     aspect-ratio: 1 / .7;
     background: #fffdff;
     border-radius: 10px;
@@ -85,14 +88,16 @@ header {
 }
 .box > div:nth-child(2) {
     background: var(--unic);
+    background: blue;
     border-radius: 100% 45% 0 0 / 3% 0% 0 0;
 
 }
-.box > div:nth-child(1) {
+.image {
     background-image: url('../4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    
     
 }
 .box > div > .anim {
@@ -108,10 +113,9 @@ header {
 
 .main {
     width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-auto-columns: 1fr;
+    
 }
 
 .bars {
@@ -165,37 +169,47 @@ header {
     padding: 10px 0;
     animation: fade 1s ease;
 }
+.box div:nth-child(1) {
+    transition: 1s;
+}
 .box:hover {
     box-shadow: 1px 7px 12px #0003;
 }
-.box:hover div > .anim {
-    margin-top: -14%;
+.box:hover .image {
+    transform: scale(1.2);
+    
 }
-.box:nth-child(2) > div:nth-child(1) {
+.box div:nth-child(2) {
+    height: 0px;
+}
+.box:hover .anim { 
+     transform: translateY(15%);
+}
+.box:nth-child(2) > .image {
     background-image: url('../books.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
-.box:nth-child(3) > div:nth-child(1) {
+.box:nth-child(3) > .image {
     background-image: url('../usa.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
-.box:nth-child(4) > div:nth-child(1) {
+.box:nth-child(4) > .image {
     background-image: url('../college.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
-.box:nth-child(5) > div:nth-child(1) {
+.box:nth-child(5) > .image {
     background-image: url('../cr.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
-.box:nth-child(6) > div:nth-child(1) {
+.box:nth-child(6) > .image {
     background-image: url('../time.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -240,6 +254,11 @@ header {
     }
     .date {
 
+    }
+    .main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: stretch;
     }
    
 }
